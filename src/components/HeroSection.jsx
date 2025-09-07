@@ -30,7 +30,7 @@ function HeroSection() {
         el guionista y editor Stan Lee y el artista Steve Ditko.
       </p>
 
-      <section className="hidden lg:flex lg:items-center lg:gap-28 lg:p-5 lg:pb-12">
+      <div className="hidden lg:flex lg:items-center lg:gap-28 lg:p-5 lg:pb-12">
         <div className="flex flex-col">
           <h1 className="font-['Spiderman'] text-[#FF3535] text-4xl lg:text-6xl xl:text-7xl lg:mb-9">
             SPIDER-MAN £
@@ -61,7 +61,7 @@ function HeroSection() {
             </button>
           </div>
         </div>
-      </section>
+      </div>
 
       <svg
         xmlns="http://www.w3.org/2000/svg"

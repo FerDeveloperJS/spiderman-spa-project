@@ -3,12 +3,7 @@ import Home from "./components/pages/Home";
 import Header from "./components/Header";
 
 function App() {
-  return (
-    <div>
-      <Header />
-      <Home />
-    </div>
-  );
+  return <Home />;
 }
 
 export default App;
