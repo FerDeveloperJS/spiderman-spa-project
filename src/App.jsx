@@ -1,10 +1,14 @@
+import HeroSection from "./components/HeroSection";
+import Home from "./components/pages/Home";
 import Header from "./components/Header";
-import Spiderman1 from "./assets/images/Movies/spiderman-1.jpg";
-import MovieCard from "./components/MovieCard";
-import Movies from "./components/pages/Movies";
 
 function App() {
-  return <Movies />;
+  return (
+    <div>
+      <Header />
+      <Home />
+    </div>
+  );
 }
 
 export default App;
