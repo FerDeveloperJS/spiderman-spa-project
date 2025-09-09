@@ -1,6 +1,6 @@
 # 🕷️ Spider-Man SPA
 
-Un sitio web de Spider-Man construido con React como una Single Page Application (SPA). El proyecto tiene varias páginas internas, componentes reutilizables y navegación rápida usando React Router.
+Un sitio web de Spider-Man construido con React como una Single Page Application (SPA). El proyecto tiene varias páginas internas, componentes reutilizables y navegación rápida usando renderizado condicional.
 
 ## 📌 Estructura de páginas
 
