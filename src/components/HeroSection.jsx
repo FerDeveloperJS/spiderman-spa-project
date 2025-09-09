@@ -12,13 +12,36 @@ function HeroSection() {
           src={Cover3Spidermans}
         />
         <div className="flex gap-2.5 justify-center flex-wrap font-['Onest'] text-sm sm:text-xl md:text-xl">
-          <button className="bg-white p-1.5 rounded-2xl cursor-pointer">
+          <button
+            className="bg-white p-1.5 rounded-2xl cursor-pointer"
+            onClick={() => {
+              const tobeyMaguireSection =
+                document.getElementById("tobey-maguire");
+              if (tobeyMaguireSection)
+                tobeyMaguireSection.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
             Tobey Maguire
           </button>
-          <button className="bg-white p-1.5 rounded-2xl cursor-pointer">
+          <button
+            className="bg-white p-1.5 rounded-2xl cursor-pointer"
+            onClick={() => {
+              const tomHollandSection = document.getElementById("tom-holland");
+              if (tomHollandSection)
+                tomHollandSection.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
             Tom Holland
           </button>
-          <button className="bg-white p-1.5 rounded-2xl cursor-pointer">
+          <button
+            className="bg-white p-1.5 rounded-2xl cursor-pointer"
+            onClick={() => {
+              const andrewGarfieldSection =
+                document.getElementById("andrew-garfield");
+              if (andrewGarfieldSection)
+                andrewGarfieldSection.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
             Andrew Garfield
           </button>
         </div>
@@ -50,13 +73,37 @@ function HeroSection() {
             src={Cover3Spidermans}
           />
           <div className="flex gap-3.5 justify-center flex-wrap font-['Onest'] text-sm lg:text-xl">
-            <button className="bg-white p-1.5 rounded-2xl cursor-pointer">
+            <button
+              className="bg-white p-1.5 rounded-2xl cursor-pointer"
+              onClick={() => {
+                const tobeyMaguireSection =
+                  document.getElementById("tobey-maguire");
+                if (tobeyMaguireSection)
+                  tobeyMaguireSection.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
               Tobey Maguire
             </button>
-            <button className="bg-white p-1.5 rounded-2xl cursor-pointer">
+            <button
+              className="bg-white p-1.5 rounded-2xl cursor-pointer"
+              onClick={() => {
+                const tomHollandSection =
+                  document.getElementById("tom-holland");
+                if (tomHollandSection)
+                  tomHollandSection.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
               Tom Holland
             </button>
-            <button className="bg-white p-1.5 rounded-2xl cursor-pointer">
+            <button
+              className="bg-white p-1.5 rounded-2xl cursor-pointer"
+              onClick={() => {
+                const andrewGarfieldSection =
+                  document.getElementById("andrew-garfield");
+                if (andrewGarfieldSection)
+                  andrewGarfieldSection.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
               Andrew Garfield
             </button>
           </div>
@@ -70,6 +117,12 @@ function HeroSection() {
         fill="#fff"
         className="bi bi-arrow-down-circle-fill absolute -bottom-3 lg:-bottom-7 left-[50%] -translate-x-1/2 sm:w-10 sm:h-10 lg:w-14 lg:h-14"
         viewBox="0 0 16 16"
+        onClick={() => {
+          const andrewGarfieldSection =
+            document.getElementById("andrew-garfield");
+          if (andrewGarfieldSection)
+            andrewGarfieldSection.scrollIntoView({ behavior: "smooth" });
+        }}
       >
         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
       </svg>
