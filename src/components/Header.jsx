@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Header() {
+function Header({ setCurrentPage }) {
   const [burgerMenu, setBurgerMenu] = useState(false);
 
   return (
@@ -16,6 +16,7 @@ function Header() {
           transition-all duration-100 ease-in-out
           hover:scale-110
           "
+          onClick={() => setCurrentPage("Home")}
         >
           HOME
         </button>
@@ -25,6 +26,7 @@ function Header() {
           transition-all duration-100 ease-in-out
           hover:scale-110
           "
+          onClick={() => setCurrentPage("Villains")}
         >
           VILLANOS
         </button>
@@ -34,6 +36,7 @@ function Header() {
           transition-all duration-100 ease-in-out
           hover:scale-110
           "
+          onClick={() => setCurrentPage("Movies")}
         >
           PELICULAS
         </button>

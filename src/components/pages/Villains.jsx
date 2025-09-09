@@ -17,7 +17,7 @@ import NewGoblin from "../../assets/images/Villains/new-goblin-villain-card.jpg"
 function Villains() {
   return (
     <article className="p-5">
-      <h1 className="text-7xl text-white font-['Spiderman'] mb-5">VILLANOS</h1>
+      <h1 className="text-7xl text-white font-['Spiderman'] mb-5">ViLlAnOs</h1>
       <div className="p-4 flex flex-col sm:flex-row sm:flex-wrap sm:justify-around gap-14 items-center">
         <VillainCard
           title={"Duende Verde"}

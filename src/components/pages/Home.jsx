@@ -10,7 +10,8 @@ import TobeyMaguireSuit from "../../assets/images/Home/tobey-maguire-suit.webp";
 function Home() {
   return (
     <div className="p-4">
-      <section className="flex flex-col gap-14">
+      <HeroSection />
+      <section className="flex flex-col gap-14 mt-44">
         <SpidermanCharacter
           title={"Andrew Garfield"}
           description={
