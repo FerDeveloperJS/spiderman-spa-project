@@ -28,7 +28,7 @@ function HeroSection() {
             className="rounded-[40px] sm:w-[533px] sm:h-[300px]"
             src={Cover3SpidermansSuit}
           />
-          <div className="flex gap-2.5 justify-center flex-wrap font-['Onest'] text-sm sm:text-xl md:text-xl">
+          <div className="flex mt-2.5 gap-2.5 justify-center flex-wrap font-['Onest'] text-sm sm:text-xl md:text-xl">
             <button
               className="bg-white p-1.5 rounded-2xl cursor-pointer"
               onClick={() => {
@@ -102,7 +102,7 @@ function HeroSection() {
             className="rounded-[40px] lg:mb-5 lg:w-[800px] xl:w-[870px]"
             src={Cover3SpidermansSuit}
           />
-          <div className="flex gap-3.5 justify-center flex-wrap font-['Onest'] text-sm lg:text-xl">
+          <div className="flex gap-3.5 justify-center flex-wrap font-['Onest'] text-sm mt-2.5 lg:text-xl">
             <button
               className="bg-white p-1.5 rounded-2xl cursor-pointer"
               onClick={() => {
