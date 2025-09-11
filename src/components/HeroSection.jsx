@@ -1,49 +1,68 @@
+import { useState } from "react";
 import Cover3Spidermans from "../assets/images/Home/cover-3-spidermans.webp";
+import Cover3SpidermansSuit from "../assets/images/Home/cover-3-spidermans-suit.jpg";
 
 function HeroSection() {
+  const [hovered, setHovered] = useState(false);
+
   return (
     <section className="mt-5 bg-black p-4 md:pb-8 flex flex-col items-center gap-12 relative rounded-4xl">
       <div className="flex gap-3.5 flex-col items-center mt-10 lg:hidden">
         <h1 className="font-['Spiderman'] text-[#FF3535] text-4xl md:text-6xl">
           SPIDER-MAN £
         </h1>
-        <img
-          className="rounded-[40px] sm:w-[533px] sm:h-[300px]"
-          src={Cover3Spidermans}
-        />
-        <div className="flex gap-2.5 justify-center flex-wrap font-['Onest'] text-sm sm:text-xl md:text-xl">
-          <button
-            className="bg-white p-1.5 rounded-2xl cursor-pointer"
-            onClick={() => {
-              const tobeyMaguireSection =
-                document.getElementById("tobey-maguire");
-              if (tobeyMaguireSection)
-                tobeyMaguireSection.scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            Tobey Maguire
-          </button>
-          <button
-            className="bg-white p-1.5 rounded-2xl cursor-pointer"
-            onClick={() => {
-              const tomHollandSection = document.getElementById("tom-holland");
-              if (tomHollandSection)
-                tomHollandSection.scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            Tom Holland
-          </button>
-          <button
-            className="bg-white p-1.5 rounded-2xl cursor-pointer"
-            onClick={() => {
-              const andrewGarfieldSection =
-                document.getElementById("andrew-garfield");
-              if (andrewGarfieldSection)
-                andrewGarfieldSection.scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            Andrew Garfield
-          </button>
+
+        <div
+          className="flex flex-col relative"
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+        >
+          <img
+            className={`absolute rounded-[40px] sm:w-[533px] sm:h-[300px] transition-opacity duration-500 ${
+              hovered ? "opacity-0" : "opacity-100"
+            }`}
+            src={Cover3Spidermans}
+          />
+
+          <img
+            className="rounded-[40px] sm:w-[533px] sm:h-[300px]"
+            src={Cover3SpidermansSuit}
+          />
+          <div className="flex gap-2.5 justify-center flex-wrap font-['Onest'] text-sm sm:text-xl md:text-xl">
+            <button
+              className="bg-white p-1.5 rounded-2xl cursor-pointer"
+              onClick={() => {
+                const tobeyMaguireSection =
+                  document.getElementById("tobey-maguire");
+                if (tobeyMaguireSection)
+                  tobeyMaguireSection.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Tobey Maguire
+            </button>
+            <button
+              className="bg-white p-1.5 rounded-2xl cursor-pointer"
+              onClick={() => {
+                const tomHollandSection =
+                  document.getElementById("tom-holland");
+                if (tomHollandSection)
+                  tomHollandSection.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Tom Holland
+            </button>
+            <button
+              className="bg-white p-1.5 rounded-2xl cursor-pointer"
+              onClick={() => {
+                const andrewGarfieldSection =
+                  document.getElementById("andrew-garfield");
+                if (andrewGarfieldSection)
+                  andrewGarfieldSection.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Andrew Garfield
+            </button>
+          </div>
         </div>
       </div>
 
@@ -67,10 +86,21 @@ function HeroSection() {
           </p>
         </div>
 
-        <div className="flex flex-col">
+        <div
+          className="flex flex-col relative"
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+        >
+          <img
+            className={`absolute rounded-[40px] lg:mb-5 lg:w-[800px] xl:w-[870px] transition-opacity duration-500 ${
+              hovered ? "opacity-0" : "opacity-100"
+            }`}
+            src={Cover3Spidermans}
+          />
+
           <img
             className="rounded-[40px] lg:mb-5 lg:w-[800px] xl:w-[870px]"
-            src={Cover3Spidermans}
+            src={Cover3SpidermansSuit}
           />
           <div className="flex gap-3.5 justify-center flex-wrap font-['Onest'] text-sm lg:text-xl">
             <button

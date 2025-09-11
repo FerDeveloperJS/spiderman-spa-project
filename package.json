@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:styles": "npx @tailwindcss/cli -i ./src/index.css -o ./src/assets/output.css --watch",
     "lint": "eslint .",
     "preview": "vite preview"
   },
