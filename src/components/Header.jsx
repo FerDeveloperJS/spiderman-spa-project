@@ -43,7 +43,7 @@ function Header({ setCurrentPage }) {
       </nav>
 
       {burgerMenu && (
-        <nav className="p-5 text-white bg-gray-800 flex flex-col gap-5 text-xl md:hidden absolute top-0 right-0 h-screen w-64">
+        <nav className="p-5 text-white bg-gray-800 flex flex-col gap-5 text-xl md:hidden absolute z-50 top-0 right-0 h-screen w-64">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
@@ -55,9 +55,33 @@ function Header({ setCurrentPage }) {
           >
             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
           </svg>
-          <button className="font-['Spiderman']">HOME</button>
-          <button className="font-['Spiderman']">VILLANOS</button>
-          <button className="font-['Spiderman']">PELICULAS</button>
+          <button
+            className="font-['Spiderman']"
+            onClick={() => {
+              setCurrentPage("Home");
+              setBurgerMenu(false);
+            }}
+          >
+            HOME
+          </button>
+          <button
+            className="font-['Spiderman']"
+            onClick={() => {
+              setCurrentPage("Villains");
+              setBurgerMenu(false);
+            }}
+          >
+            VILLANOS
+          </button>
+          <button
+            className="font-['Spiderman']"
+            onClick={() => {
+              setCurrentPage("Movies");
+              setBurgerMenu(false);
+            }}
+          >
+            PELICULAS
+          </button>
         </nav>
       )}
 
